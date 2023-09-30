@@ -203,4 +203,3 @@ class TestAccountService(TestCase):
             header_value = response.headers.get(key)
             print(f"{key}: {header_value}")
             self.assertEqual(header_value, value)
-            
