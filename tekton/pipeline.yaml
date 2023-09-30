@@ -47,8 +47,6 @@ spec:
       - name: image
         value: "python:3.9-slim"
       - name: args
-        value: ["--count","--max-complexity=10","--max-line-length=127","--statistics"]
-      - name: ignore
-        value: ["W292"]
+        value: ["--count","--max-complexity=10","--max-line-length=127","--statistics","--ignore=W292"]
       runAfter:
         - clone
